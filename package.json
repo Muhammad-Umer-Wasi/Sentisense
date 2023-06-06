@@ -1,0 +1,19 @@
+{
+  "name": "ml-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Umer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "brain.js": "^2.0.0-beta.23",
+    "brainjs": "^0.7.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

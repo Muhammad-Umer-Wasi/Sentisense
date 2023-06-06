@@ -5,18 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-             
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, orange, yellow, red);
+        }
+
+        html{
+            height:100%
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .nav-wrapper {
+            background: linear-gradient(to bottom, #ff6347, #ff4500);
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .wordart {
+            font-family: 'Bungee Shade', cursive;
+            font-size: 3rem;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-    <div class="showcase container">
-    <h1>Ml Web App</h1>
-</div>
-<div>   <p>Message: <%= mydata%></p>
-<p>Prediction: <%= resultdata%></p>
-</div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Sentiment Analyzer</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="center-align wordart">Results</h3>
+            </div>
+        </div>
+    <div class="row">
+        <p>Message: <%= mydata %></p>
+        <p>Prediction: <%= resultdata %></p>
+    </div>
+    </div>
 </body>
 </html>
